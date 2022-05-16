@@ -1,7 +1,22 @@
+import React, { useState } from 'react'
+import Form from './components/Form'
+
+import Display from './components/Display';
+
+
+
 
 
 function App() {
-  return <h1>Hello World</h1>;
+  // When user enters a color, create a box of that color and show all boxes.
+  const [boxColor, setBoxColor] = useState([])
+  return (
+    <>
+    <Form boxColor={boxColor} setBoxColor={setBoxColor}/>
+    <Display boxColor={boxColor}/>
+    </>
+
+  )
 }
 
 export default App;
