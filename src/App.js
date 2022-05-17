@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Form from './components/Form'
 import Display from './components/Display';
 import NinjaForm from './components/NinjaForm';
+import NinjaDisplay from './components/NinjaDisplay';
 
 
 
@@ -15,6 +16,7 @@ function App() {
     <Form boxColor={boxColor} setBoxColor={setBoxColor}/>
     <Display boxColor={boxColor}/>
     <NinjaForm boxColor={boxColor} setBoxColor={setBoxColor}/>
+    <NinjaDisplay boxColor={boxColor} />
     </>
 
   )

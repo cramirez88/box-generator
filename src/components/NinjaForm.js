@@ -16,8 +16,9 @@ const NinjaHandler = e => {
     color: color,
     size: size + 'px'
   }])
-  setColor('')
   setSize(40)
+  setColor('')
+  
 }
 
 return (
