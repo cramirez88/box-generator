@@ -9,6 +9,7 @@ const Form = (props) => {
   const handleSubmit = e => {
     e.preventDefault();
     setBoxColor([...boxColor, color])
+    setColor('')
   }
 
 
@@ -18,7 +19,7 @@ const Form = (props) => {
     <form onSubmit = {handleSubmit}>
     <div>
       <label htmlFor='color'>Color</label>
-      <input type='text' onChange = {e => setColor(e.target.value)}></input>
+      <input type='text' onChange = {e => setColor(e.target.value)} value={color}></input>
     </div>
     <button>Add</button>
     </form>
