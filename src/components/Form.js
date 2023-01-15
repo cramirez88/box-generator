@@ -1,33 +1,16 @@
-import React, { useState } from 'react'
+import react from 'react'
 
 
-const Form = (props) => {
-  const [color, setColor] = useState('')
-  
-  const {boxColor, setBoxColor} = props
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    setBoxColor([...boxColor, color])
-    setColor('')
-  }
-
-
-
-  return (
-    <>
-    <form onSubmit = {handleSubmit}>
+const Form = () => {
+  return(
     <div>
-      <label htmlFor='color'>Color</label>
-      <input type='text' onChange = {e => setColor(e.target.value)} value={color}></input>
+      <form>
+        <label>Color</label>
+        <input type={'text'}></input>
+        <button>Add</button>
+      </form>
     </div>
-    <button>Add</button>
-    </form>
-    
-    
-    </>
   )
 }
 
-
-export default Form;
+export default Form
