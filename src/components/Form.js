@@ -1,12 +1,20 @@
-import react from 'react'
+import React, {useState} from 'react'
 
 
-const Form = () => {
+const Form = (props) => {
+  const [color, setColor] = useState('')
+  const {boxColor, setBoxColor} = props
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+    setBoxColor([...boxColor, color])
+    setColor('')
+  }
   return(
     <div>
-      <form>
+      <form onSubmit={submitHandler}>
         <label>Color</label>
-        <input type={'text'}></input>
+        <input type={'text'} onChange={(e) => setColor(e.target.value)} value={color}></input>
         <button>Add</button>
       </form>
     </div>
