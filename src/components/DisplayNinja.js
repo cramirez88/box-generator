@@ -7,7 +7,7 @@ export default function DisplayNinja(props) {
       {
         boxSize.map((size, index) => {
           return (
-            <div key={index} style={{width: size, height: size, backgroundColor: boxColor, display: 'inline-block', margin: '10px'}}></div>
+            <div key={index} style={{width:size.size, height: size.size, backgroundColor: size.color, display: 'inline-block', margin: '10px'}}></div>
           )
         })
       }

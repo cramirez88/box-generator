@@ -4,6 +4,7 @@ import React, {useState} from 'react'
 const Form = (props) => {
   const [color, setColor] = useState('')
   const {boxColor, setBoxColor} = props
+  
 
   const submitHandler = (e) => {
     e.preventDefault()

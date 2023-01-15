@@ -12,6 +12,8 @@ function App() {
   const [boxColor, setBoxColor] = useState([])
   
   const [boxSize, setBoxSize] = useState([])
+  // color state for NinjaForm
+  // const [ninjaColor, setNinjaColor] = useState([])
   return (
     <>
     <Form boxColor={boxColor} setBoxColor={setBoxColor}/>
